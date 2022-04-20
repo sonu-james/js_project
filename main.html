@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <!--<link rel="stylesheet" href="jsExample.css">-->
+    <link rel="stylesheet" href="new.css">
+  <script defer src="./jsExample.js"></script>
+<!--<script defer src="./display.js"></script>-->
+
+</head>
+
+<body>
+    <div class="header">
+        User Management
+    </div>
+    <table>
+        <tr>
+            <td>
+                <div class="search" id="search">
+                    <input type="text" name="search" placeholder="Search..">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <a href="#"><button class="button" id="button"> ADD USER</button></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <div class="popup">
+                <div class="popup-content">
+                    <img src="close.png" alt="close" class="close" width="25px" height="25px">
+                    <img src="person1.png" alt="User" height="40px" width="40px">
+                    <h1>Add User Form</h1>
+                    <form id="form" action="/">
+                        <div class="input-control">
+                           <div class="label"><label for="username">Username</label></div>
+                           <div class="input-box"><input type="text" id="username" name="username" placeholder="Your name.."></div>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <div class="label"><label for="email">Email</label></div>
+                            <div class="input-box"> <input type="email" id="email" name="email" placeholder="Your email.."></div>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-control">
+                            <div class="label"><label for="text">Designation</label></div>
+                            <div class="input-box"> <input type="text" id="desi" name="desi" placeholder="Your Designation.."></div>
+                            <div class="error"></div>
+                        </div>
+
+
+
+                        <!-- <div class="input-control">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Your password..">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-control">
+                            <label for="password">Confirm Password</label>
+                            <input type="password" id="password2" name="password" placeholder="Your password..">
+                            <div class="error"></div>
+                        </div>-->
+                        <input type="submit" value="Submit">
+                        <input type="submit" value="Cancel" class="cancel">
+
+                    </form>
+                </div>
+            </div>
+        </tr>
+
+    </table>
+
+
+    <div class="flex-container" id="flex-container" >
+
+        <!-- <div class="User-box" id="table"> 
+         <img src="person1.png" id="person" alt="studnt pic"
+                    style="width:100px;height: 100px;">-->
+            
+
+
+    </div>
+
+    <!-- <div class="User-box">
+            <img src="person1.png" alt="studnt pic" style="width:100px;height: 100px;"><br><br><br>
+            <label>Anu</label><br>
+            <label>Roll No:26</label>
+        </div>
+        <div class="User-box">
+            <img src="person1.png" alt="studnt pic" style="width:100px;height: 100px;"><br><br><br>
+            <label>Anu</label><br>
+            <label>Roll No:26</label>
+        </div>
+        <div class="User-box">
+            <img src="person1.png" alt="studnt pic" style="width:100px;height: 100px;"><br><br><br>
+            <label>Anu</label><br>
+            <label>Roll No:26</label>
+        </div>
+        <div class="User-box">
+            <img src="person1.png" alt="studnt pic" style="width:100px;height: 100px;"><br><br><br>
+            <label>Anu</label><br>
+            <label>Roll No:26</label>
+        </div>
+        <div class="User-box">
+            <img src="person1.png" alt="studnt pic" style="width:100px;height: 100px;"><br><br><br>
+            <label>Anu</label><br>
+            <label>Roll No:26</label>
+        </div>
+        <div class="User-box">
+            <img src="person1.png" alt="studnt pic" style="width:100px;height: 100px;"><br><br><br>
+            <label>Anu</label><br>
+            <label>Roll No:26</label>
+        </div>
+        <div class="User-box">
+            <img src="person1.png" alt="studnt pic" style="width:100px;height: 100px;"><br><br><br>
+            <label>Anu</label><br>
+            <label>Roll No:26</label>
+        </div>
+
+    -->
+
+
+    <script>
+        document.getElementById("button").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "flex";
+        })
+
+        document.querySelector(".close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        }
+        )
+
+        document.querySelector(".cancel").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        }
+        )
+
+
+
+    </script>
+
+</body>
+
+</html>
